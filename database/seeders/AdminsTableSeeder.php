@@ -23,7 +23,7 @@ class AdminsTableSeeder extends Seeder
 
             'name' => $faker->name,
             'email' => 'admin@admin.com',
-            'password'  =>  bcrypt('password'),
+            'password'  =>  bcrypt('123456'),
 
         ]);
     }

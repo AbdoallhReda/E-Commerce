@@ -18,14 +18,14 @@ class CategoryFactory extends Factory
      */
     public function definition()
     {
-        $factory->define(Category::class, function (Faker $faker) {
+//        $factory->define(Category::class, function (Faker $faker) {
         return [
-            'name'          =>  $faker->name,
-            'description'   =>  $faker->realText(100),
+            'name'          =>  fake()->name(),
+            'description'   =>  fake()->realText(100),
             'parent_id'     =>  1,
             'menu'          =>  1,
          ];
-        });
+//        });
     }
 
 

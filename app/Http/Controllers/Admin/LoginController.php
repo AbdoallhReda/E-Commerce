@@ -6,11 +6,13 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use Illuminate\Support\Facades\Auth;
+//use Auth;
 
 class LoginController extends Controller
 {
     //
     use AuthenticatesUsers;
+
 
     /**
      * Where to redirect admins after login.

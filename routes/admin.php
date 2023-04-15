@@ -23,7 +23,7 @@ Route::group(['prefix' => 'admin', 'namespace' => '\App\Http\Controllers'], func
             Route::get('/create', 'Admin\CategoryController@create')->name('admin.categories.create');
             Route::post('/store', 'Admin\CategoryController@store')->name('admin.categories.store');
             Route::get('/{id}/edit', 'Admin\CategoryController@edit')->name('admin.categories.edit');
-            Route::post('/update', 'Admin\CategoryController@update')->name('admin.categories.update');
+            Route::put('/update', 'Admin\CategoryController@update')->name('admin.categories.update');
             Route::get('/{id}/delete', 'Admin\CategoryController@delete')->name('admin.categories.delete');
 
         });

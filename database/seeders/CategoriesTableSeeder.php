@@ -6,7 +6,7 @@ use App\Models\Category;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
-class CaregoriesTableSeeder extends Seeder
+class CategoriesTableSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -15,6 +15,7 @@ class CaregoriesTableSeeder extends Seeder
      */
     public function run()
     {
+
 
         Category::create([
 
@@ -26,7 +27,7 @@ class CaregoriesTableSeeder extends Seeder
 
         ]);
 
-        factory('App\Models\Category', 10)->create();
+        \App\Models\Category::factory()->count(50)->create();
 
 
 
